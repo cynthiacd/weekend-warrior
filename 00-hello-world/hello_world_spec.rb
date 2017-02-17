@@ -1,8 +1,11 @@
 gem 'minitest', '>= 5.0.0'
+#minitest/pride will return lolcat results and sassy language
 require 'minitest/pride'
 require 'minitest/autorun'
+#checkout require_relative - lets you require another ruby file in the same directory
 require_relative 'hello_world'
 
+#This code is written according to minitest gem -
 describe "Hello World" do
   it "When given no name, it should greet the world!" do
     expect(hello_world).must_equal 'Hello, World!'
